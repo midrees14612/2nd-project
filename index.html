@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripton" content="travlly is a travel agency website "/>
+    <link rel="icon" href="./icon.png">
+   <title>Travlly</title>
+</head>
+<style>
+   
+   
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+
+
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    h1 {
+        font-size: 2.6rem;
+
+    }
+    li,button,label,input,p {
+        font-size: 2rem;
+
+    }
+    h2 {
+        font-size: 4.8rem;
+    }
+    h3 {
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    h4,h5{
+        font-size: 2.8rem;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /* nav section hero */
+    .main-head{
+        background-color: black;
+        color: white;
+        position: sticky;
+        top: 0px;
+    }
+    nav{
+        
+        display: flex;
+        width: 90%;
+        padding: 2rem;
+        height: 10vh;
+        margin: auto;
+        align-items: center;
+        flex-wrap: wrap;
+     
+    }
+    nav ul{
+        display: flex;
+        flex: 1 1 50rem;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    #logo{
+        flex: 2 1 40rem;
+        font-family: 'Pattaya', sans-serif;
+        font-weight: 400;
+    }
+    .hero{
+        min-height: 90vh;
+        background: linear-gradient(rgb(0,0,0,0.5), transparent), url(./neom-NPDnHmYsl6Y-unsplash.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .hero h3 {
+        padding: 5rem;
+    }
+    button {
+        padding: 2rem 6rem ;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color:white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        
+        
+    }
+    button:hover{
+        background-color: rgb(0, 85, 164);
+        font-size: 2.6rem;
+    }
+    @media screen and (max-width: 932px) {
+        html{
+            font-size: 45%;
+        }
+        nav{
+            text-align: center;
+        }
+        #logo{
+            padding: 1rem;
+        }
+        
+    }
+    /* the location*/
+    #location{
+        min-height: 100vh;
+        background:linear-gradient(rgba(237, 238, 239, 0.781), transparent),url(./newyork.jpg);
+        display: flex;
+        background-position: center;
+        background-size: cover;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+    }
+    .location-head{
+        width: 90%;
+        margin: auto;
+    }
+    .location-head h2 {
+        padding: 1rem 0rem;
+        text-decoration: underline;
+    }
+    .location-head h3 {
+        padding:4rem 0rem ;
+        background: rgba(19,28,39,0);
+        -webkit-text-fill-color:rgb(1, 13, 29);
+        
+    }
+    .form-wrapper{
+        width: 100%;
+    }
+    
+    .cloud{
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
+    .moving-cloud-1{
+        animation: cloudAnimation 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes cloudAnimation {
+   from{
+    transform: translate(10%,-10%);
+   }
+   to{
+    transform: translate(0%,0%);
+   }
+        
+    }
+    /* the benefits section*/
+.benefits-head{
+    background: rgb(8, 28, 58);
+    padding: 3rem;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.benefits h3{
+    padding: 1rem;
+
+}
+.cards{
+    width: 90%;
+    margin:auto;
+    display:flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.card{
+    flex: lightcoral;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1), 0px 20px 20px rgba(0,0,0,0.1);
+    text-align: center;
+
+}
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+  
+}
+.card h4{
+    padding: 3rem;
+}
+.card p{
+    padding: 1rem;
+}
+
+.card-icon{
+    background: rgb(8, 28, 58);
+}
+/*contact*/
+#contact{
+    min-height: 100vh;
+    background:linear-gradient(rgba(237, 238, 239, 0.781), transparent), url(./willian-justen-de-vasconcellos-T_Qe4QlMIvQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper{
+    background: rgb(19,28,39,0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+
+}
+.name-form,
+.email-form{
+    padding: 3rem;
+    text-align: center;
+}
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    background: rgb(8, 28, 58);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-wrapper input{
+    padding:1rem 3rem;
+}
+  footer {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+
+}
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+
+}
+ footer h5 {
+    flex: 1 1 40rem;
+    padding-bottom: 3rem;
+    text-align: left;
+ }
+ footer ul{
+    display: flex;
+    list-style: none;
+    flex:1 1 80rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+   
+</style>
+<body>
+    <header class="main-head">
+        <nav>
+            <h1 id="logo">travelly </h1>
+            <ul> 
+             <li><a href="#location">location</a></li>
+             <li><a href="#benefits">benefits</a></li>
+             <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>travel beyond limits</h2>
+        <h3>start your travel at an affordable price with<br/>
+        contact us now below</h3>
+        <button>book now</button>
+
+    </section>
+    <section id="location">
+        <header class="location-head">
+        <h2>the perfect travelling experience</h2>
+        <h3>we cover the everything the perfect hotel, <br/>
+        flight and travelling destination.
+    </h3>
+    <img src="./aeroplane.png" class="moving-cloud-1 cloud"/>
+   
+        </header>
+
+    </section>
+    <section id="benefits">
+        <header class="benefits-head">
+        <h2>the perfect travel</h2>
+        <h3>we cover the  everything for picking the perfect hotel <br/>
+        to flight and destination.
+    </h3>
+</header>
+<div class="cards">
+    <div class="card">
+        <div class="card-icon">
+        <img src="./map.png" alt="">
+    </div>
+        <h4>travel</h4>
+        <p>travel in over 250 countries with no effort</p>
+    </div>
+    <div class="card">
+        <div class="card-icon">
+        <img src="./hotel.png" alt="">
+    </div>
+        <h4>hotel</h4>
+        <p>hotel located near popular area</p>
+    </div>
+    <div class="card">
+        <div class="card-icon">
+        <img src="./flight.png" alt="">
+    </div>
+        <h4>plane</h4>
+        <p>flight included in every purchase trip</p>
+    </div>
+</div>
+    </section>
+    <section id="contact">
+<div class="form-wrapper"> 
+    <header class="form-head">
+        <h2>contact us</h2>
+    </header>
+    <form action="https://formspree.io/f/xwkdyzaj"method="POST">
+        <div class="name-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required />
+    </div>
+    <div class="email-form">
+        <label for="email">Email</label>
+        <input type="email" required name="_replyto" />
+    </div>
+    <button type="submit">send</button>
+    </form>
+    
+</div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <h5>travelly & copy;</h5>
+            <ul>
+                <li><a href="#"><img src="./twitter.png" alt=""></a>
+                </li>
+                <li><a href="#"><img src="./instagram (1).png" alt=""></a>
+                </li>
+                <li><a href="#"><img src="./linkedin (1).png" alt=""></a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+</body>
+</html>
